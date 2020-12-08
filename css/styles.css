@@ -1,0 +1,174 @@
+
+/* ================================= 
+  Base Styles
+==================================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    background: #f4f6f7;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+.main-header {
+    width: 100%;
+    text-align: center;
+    background: #fff;
+    min-height: 30px;
+    padding: 10px;
+    position: fixed;
+}
+
+.name {
+    margin: 0;
+}
+
+.profile-image {
+    margin: 200px 20px 20px 40px;
+
+}
+
+.main-nav {
+    font-size: .95em;
+    color: black;
+    text-transform: uppercase;
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+.name a, 
+.main-nav a,
+.footer-nav a {
+    display: block;
+    padding: 10px 15px;
+    color: black;
+}
+.main-footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.footer-short {
+    display: none;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header,
+.main-footer {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin-top: auto;
+}
+
+.cards {
+    margin: 50px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.banner {
+    padding: 3.2em 0;
+    margin-bottom: 5px;
+}
+
+.portfolio {
+    text-align: center;
+}
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .profile-image {
+        margin-top: 40px;
+        display: inline-block;
+        float: right;
+    }
+
+    .tagline {
+        margin-top: 60px;
+    }
+
+    .name,
+    .card 
+    {
+        float: left;
+    }
+
+    .main-nav,
+    .footer-nav {
+        float: right; 
+    }
+
+    .main-nav li,
+    .footer-nav li {
+        display: inline-block;
+        margin-left: 15px; 
+    }
+
+    .tagline {
+      font-size: 1.4em;
+    }
+
+    .card {
+        width: 50%;
+        padding: 15px;
+    }
+
+    .footer-full {
+        display: inline-block;
+    }
+
+    .footer-short {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .container {
+        width: 80%;
+        max-width: 1150px;
+    }
+    .card {
+        width: 30%;
+        padding: 15px;
+    }
+}
+
