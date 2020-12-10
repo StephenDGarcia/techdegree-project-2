@@ -13,6 +13,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #222;
     background: #f4f6f7;
+    width: 100%;
 }
 
 a {
@@ -25,26 +26,41 @@ img {
 
 li {
     list-style-type: none;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
 }
 /* ================================= 
   Base Layout Styles
 ==================================== */
+#con {
+    margin-top: 192px;
+}
 
 .main-header {
     width: 100%;
     text-align: center;
     background: #fff;
     min-height: 30px;
-    padding: 10px;
+    padding: 0px;
     position: fixed;
+    top: 0;
+}
+
+.main-header ul {
+    padding: 0;    
 }
 
 .name {
-    margin: 0;
+        margin: 0;
+        padding: 0;
+        text-align: center;    
 }
 
 .profile-image {
-    margin: 200px 20px 20px 40px;
+    margin: 181px 0 auto
 
 }
 
@@ -71,8 +87,8 @@ li {
     text-transform: uppercase;
 }
 
-.footer-short {
-    display: none;
+.footer-nav {
+    float: right;
 }
 
 /* ---- Layout Containers ---- */
@@ -104,6 +120,14 @@ li {
     display: table;
     clear: both;
 }
+.container2 {
+    display: inline;
+}
+
+.footer-full {
+    display: none;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
@@ -126,7 +150,8 @@ li {
     }
 
     .name,
-    .card 
+    .card,
+    .name2 
     {
         float: left;
     }
