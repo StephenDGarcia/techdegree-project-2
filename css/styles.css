@@ -60,7 +60,8 @@ ul {
 }
 
 .profile-image {
-    margin: 181px 0 auto
+    /* margin: 0px 0 auto; */
+    padding: 20px;
 
 }
 
@@ -73,12 +74,19 @@ ul {
 }
 
 .name a, 
-.main-nav a,
-.footer-nav a {
+.main-nav a
+/* .footer-nav a */ {
     display: block;
     padding: 10px 15px;
     color: black;
 }
+
+.name-2 a {
+    float: left;
+    display: inline;
+    color: black;
+}
+
 .main-footer {
     width: 100%;
     text-align: center;
@@ -109,6 +117,11 @@ ul {
 .banner {
     padding: 3.2em 0;
     margin-bottom: 5px;
+}
+
+#top {
+    margin: 0px;
+    padding-top: 10px;
 }
 
 .portfolio {
@@ -144,9 +157,13 @@ ul {
         display: inline-block;
         float: right;
     }
+#top {
+    display: inline-block;
+}
 
     .tagline {
         margin-top: 60px;
+        width: 80%;
     }
 
     .name,
