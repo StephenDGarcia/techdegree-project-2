@@ -36,7 +36,7 @@ ul {
   Base Layout Styles
 ==================================== */
 #con {
-    margin-top: 192px;
+    margin-top: 10px;
 }
 
 .main-header {
@@ -45,7 +45,7 @@ ul {
     background: #fff;
     min-height: 30px;
     padding: 0px;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
 }
 
@@ -83,39 +83,45 @@ ul {
 
 .name-2 a {
     float: left;
-    display: inline;
+    /* display: inline; */
     color: black;
 }
 
 .main-footer {
-    width: 100%;
-    text-align: center;
+    /* width: 100%; */
+    /* text-align: center; */
     padding: 10px;
     color: black;
     text-transform: uppercase;
+    display: inline;
 }
 
 .footer-nav {
     float: right;
+    color: black;
 }
 
+.contact li{
+    padding: 5px;
+}
 /* ---- Layout Containers ---- */
 
 .main-header,
 .main-footer {
-    padding-top: .5em;
-    padding-bottom: .5em;
+    /* padding-top: .5em; */
+    /* padding-bottom: .5em; */
     margin-top: auto;
 }
 
 .cards {
-    margin: 50px;
-    padding-right: 20px;
+    margin: 20px;
+    padding-right: 0px;
     text-align: center;
 }
 
 .banner {
     padding: 3.2em 0;
+    padding-top: 5px;
     margin-bottom: 5px;
 }
 
@@ -151,19 +157,29 @@ ul {
         width: 90%;
         margin: 0 auto;
     }
-
+  
     .profile-image {
         margin-top: 40px;
         display: inline-block;
         float: right;
     }
-#top {
-    display: inline-block;
-}
+
+    .name {
+        width: 100%;
+    }
+
+    /* .main-nav {
+        display: inline-block;
+    } */
+
+    #top {
+        display: inline-block;
+    }
 
     .tagline {
         margin-top: 60px;
-        width: 80%;
+        width: 60%;
+        padding: 2%;
     }
 
     .name,
@@ -173,7 +189,13 @@ ul {
         float: left;
     }
 
-    .main-nav,
+    .main-footer,
+    .container2 {
+        display: inline;
+        width: 100%;
+    }
+
+    /* .main-nav, */
     .footer-nav {
         float: right; 
     }
@@ -205,9 +227,22 @@ ul {
 @media (min-width: 1024px) {
 
     .container {
-        width: 80%;
+        width: 100%;
         max-width: 1150px;
     }
+
+    .name {
+        width: 60%;
+        float: left;
+        padding-right: 200px;
+    }
+
+    .main-nav {
+        display: inline-block;
+        width: 40%;
+        float: right;
+    }
+
     .card {
         width: 30%;
         padding: 15px;
