@@ -37,6 +37,7 @@ ul {
 ==================================== */
 #con {
     margin-top: 10px;
+    margin-right: 10px;
 }
 
 .main-header {
@@ -82,22 +83,23 @@ ul {
 }
 
 .name-2 a {
-    float: left;
-    /* display: inline; */
     color: black;
 }
 
+h4.name-2 {
+    float: left;
+}
+
 .main-footer {
-    /* width: 100%; */
-    /* text-align: center; */
     padding: 10px;
     color: black;
     text-transform: uppercase;
-    display: inline;
+    width: 100%;
 }
 
 .footer-nav {
     float: right;
+    padding-top: 5px;
     color: black;
 }
 
@@ -115,6 +117,7 @@ ul {
 
 .cards {
     margin: 20px;
+    margin-right: 39px;
     padding-right: 0px;
     text-align: center;
 }
@@ -139,9 +142,6 @@ ul {
     display: table;
     clear: both;
 }
-.container2 {
-    display: inline;
-}
 
 .footer-full {
     display: none;
@@ -154,8 +154,8 @@ ul {
 @media (min-width: 768px) {
 
     .container {
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
+        margin: initial;
     }
   
     .profile-image {
@@ -189,21 +189,14 @@ ul {
         float: left;
     }
 
-    .main-footer,
-    .container2 {
-        display: inline;
-        width: 100%;
-    }
-
-    /* .main-nav, */
-    .footer-nav {
-        float: right; 
-    }
-
     .main-nav li,
     .footer-nav li {
         display: inline-block;
         margin-left: 15px; 
+    }
+
+    .footer-nav {
+        padding: 0;
     }
 
     .tagline {
@@ -215,12 +208,21 @@ ul {
         padding: 15px;
     }
 
+    h4.name-2 {
+       margin: auto;
+    }
+
     .footer-full {
-        display: inline-block;
+        display: initial;
     }
 
     .footer-short {
         display: none;
+    }
+
+    .main-footer {
+        padding-bottom: 52px;
+        padding-right: 40px;
     }
 }
 
@@ -228,24 +230,39 @@ ul {
 
     .container {
         width: 100%;
-        max-width: 1150px;
+        /* max-width: 1150px; */
+        margin-right: initial;
     }
 
     .name {
-        width: 60%;
+        width: 50%;
         float: left;
         padding-right: 200px;
+        padding-left: -40px;
     }
 
     .main-nav {
         display: inline-block;
-        width: 40%;
+        width: 50%;
         float: right;
     }
 
     .card {
         width: 30%;
         padding: 15px;
+    }
+
+    #con {
+        width: 100%;
+    }
+
+    .portfolio {
+        display: block;
+        margin-top: 44px;
+    }
+
+    #portfolio {
+        margin-right: -80px;
     }
 }
 
