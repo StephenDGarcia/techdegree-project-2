@@ -247,7 +247,7 @@ h4.name-2 {
     }
 
     .card {
-        width: 30%;
+        width: 33.333%;
         padding: 15px;
     }
 
@@ -261,7 +261,7 @@ h4.name-2 {
     }
 
     #portfolio {
-        margin-right: -80px;
+        margin: 0 auto;
     }
 }
 
